@@ -27,21 +27,18 @@ public class concatenatedSum {
         int num = n;
 
         while(num > 0){
-            int lastDigit = num % 10;
-            int sum = 0;
+            int digit = num % 10;
+            int concatSum = 0;
             int count = catlen;
             while(count-- > 0){
-                sum = (sum * 10) + lastDigit;
+                concatSum = (concatSum * 10) + digit;
             }
 
-            total += sum;
+            total += concatSum;
             num /= 10;
         }
 
-        System.out.println(total);
-        if(n != total)
-            return 0;
-        return 1;
+        return n == total ? 1 : 0;
     }
 
     public static void main(String[] args) {
