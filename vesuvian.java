@@ -1,6 +1,14 @@
 import java.util.HashSet;
 import java.util.Set;
 
+/*
+ A number n is vesuvian if it is the sum of two different pairs of squares. For example, 50 is vesuvian because 50 == 25 + 25 and 1 + 49. The numbers 65 (1+64, 16+49) and 85 (4+81, 36+49) are also vesuvian. 789 of the first 10,000 integers are vesuvian.
+
+ Write a function named isVesuvian that returns 1 if its parameter is a vesuvian number, otherwise it returns 0. 
+
+Hint: be sure to verify that your function detects that 50 is a vesuvian number! 
+ */
+
 public class vesuvian {
     // SOLUTION 1:
     /*
